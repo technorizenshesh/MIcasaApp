@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SellBorowActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/josefin_sans"
+        android:text="@string/sell_your_items_and_turn_it_into_cash"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_21sdp" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutDots"/>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_above="@id/btn_sell"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sell"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        app:backgroundTint="@color/purple_700"
+        app:rippleColor="@color/white"
+        app:cornerRadius="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_above="@id/btn_browsing"
+        android:elevation="@dimen/_3sdp"
+        android:outlineProvider="background"
+        android:fontFamily="@font/josefin_sans"
+        android:textAllCaps="false"
+        android:outlineSpotShadowColor="@color/purple_200"
+        android:text="@string/start_selling"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_browsing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        app:backgroundTint="@color/dark_blue"
+        app:rippleColor="@color/white"
+        app:cornerRadius="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:elevation="@dimen/_3sdp"
+        android:outlineProvider="background"
+        android:fontFamily="@font/josefin_sans"
+        android:textAllCaps="false"
+        android:outlineSpotShadowColor="@color/purple_200"
+        android:text="@string/i_m_just_browsing"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

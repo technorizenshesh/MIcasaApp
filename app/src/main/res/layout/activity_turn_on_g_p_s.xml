@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TurnOnGPSActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tv_skip"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:text="@string/skip"
+        android:layout_alignParentRight="true"
+        app:cornerRadius="@dimen/_8sdp"
+        android:backgroundTint="#F2F2F2"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:fontFamily="@font/josefin_sans"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_skip"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hi_john_nwelcome_to"
+                android:layout_margin="@dimen/_20sdp"
+                android:lineSpacingExtra="@dimen/_15sdp"
+                android:fontFamily="@font/josefin_sans"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_30sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/micasa" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefin_sans"
+            android:layout_margin="@dimen/_20sdp"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:text="@string/please_turn_on_your_gps_to_find_nout_better_restaurant_suggestion_nnear_you"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOnGps"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            app:backgroundTint="@color/dark_blue"
+            app:rippleColor="@color/white"
+            app:cornerRadius="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:elevation="@dimen/_3sdp"
+            android:outlineProvider="background"
+            android:fontFamily="@font/josefin_sans"
+            android:textAllCaps="false"
+            android:outlineSpotShadowColor="@color/purple_200"
+            android:text="@string/turn_on_gps"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

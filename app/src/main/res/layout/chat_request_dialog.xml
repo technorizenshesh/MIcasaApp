@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="@string/chat_request"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorLightGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_request_to_seller_for_chat"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            app:backgroundTint="@color/purple_700"
+            app:rippleColor="@color/purple_200"
+            app:cornerRadius="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:elevation="@dimen/_3sdp"
+            android:outlineProvider="background"
+            android:fontFamily="@font/josefin_sans"
+            android:textAllCaps="false"
+            android:outlineSpotShadowColor="@color/purple_200"
+            android:text="@string/send_request"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

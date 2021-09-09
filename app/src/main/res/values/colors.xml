@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#85EF7C0C</color>
+    <color name="purple_500">#F57D09</color>
+    <color name="purple_700">#EBDD750F</color>
+    <color name="teal_200">#FB862E</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="colorTitle">#c09852</color>
+    <color name="colorBlue">#29A8EC</color>
+    <color name="colorDarkBlue">#0b2d50</color>
+
+
+    <color name="colorWhite">#FFFEFE</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#009688</color>
+    <color name="colorLight">#949191</color>
+    <color name="colorRedText">#DB9C7D</color>
+    <color name="colorBrownDark">#b18c4c</color>
+    <color name="colorBrownLight">#877e54</color>
+    <color name="blue_color">#87C2EE</color>
+
+    <color name="colorPGreen">#257712</color>
+    <color name="colorGray">#727272</color>
+    <color name="colorNgray">#d2d3d4</color>
+    <color name="colorLightGray">#e3e3e3</color>
+    <color name="colorBackground">#f3fcff</color>
+    <color name="colorBase">#800080</color>
+    <color name="colordarksnack">#800080</color>
+    <color name="colorsnack">#a5ffffff</color>
+    <color name="dark_green">#00ba8b</color>
+    <color name="color_newsnack">#A3E4D7</color>
+    <color name="colorTransparentBlack">#75000000</color>
+    <color name="red">#FB0422</color>
+    <color name="dark_red">#DE0808</color>
+    <color name="my_donation">#f3fcff</color>
+    <color name="yellow">#F6E24F</color>
+    <color name="color_brown">#d8b059</color>
+    <color name="color_splash">#BCE0EE</color>
+    <color name="color_activdot">#bebebe</color>
+    <color name="color_search">#D7DBDD</color>
+    <color name="blue">#0000ff</color>
+    <color name="red_light">#6FFB0422</color>
+    <color name="green_light">#6533F43A</color>
+    <color name="dark_blue">#2196F3</color>
+    <color name="light_darkBlue">#52b6f6</color>
+    <color name="light_blue">#55bff7</color>
+    <color name="green">#3EC05A</color>
+    <color name="colorlightPink">#FF6678</color>
+    <color name="colorGray1">#B1BCC6</color>#0b2d50
+
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#bebebe</color>
+    <color name="dot_dark_screen2">#bebebe</color>
+    <color name="dot_dark_screen3">#bebebe</color>
+    <color name="dot_dark_screen4">#bebebe</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#ef7c0c</color>
+    <color name="dot_light_screen2">#ef7c0c</color>
+    <color name="dot_light_screen3">#ef7c0c</color>
+    <color name="dot_light_screen4">#ef7c0c</color>
+
+
+     <color name="search_icon">#B5BDD3</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

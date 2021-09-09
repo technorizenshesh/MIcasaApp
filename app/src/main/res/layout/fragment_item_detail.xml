@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ItemDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_itemDetailaction"
+        layout="@layout/layou_header"/>
+
+    <LinearLayout
+        android:id="@+id/linear_searchId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rounded_corner_search"
+        android:elevation="@dimen/_10sdp">
+
+        <EditText
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:padding="@dimen/_8sdp"
+            android:editable="false"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/_5sdp"
+            android:background="@drawable/rounded_corner_search"
+            android:backgroundTint="@color/white"
+            android:hint="@string/search"
+            android:drawableLeft="@drawable/ic_search"
+            android:imeOptions="actionSearch"
+            android:paddingStart="@dimen/_15sdp"
+            />
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_itemDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

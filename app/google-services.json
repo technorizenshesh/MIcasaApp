@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "691533414440",
+    "project_id": "micasa-c79ff",
+    "storage_bucket": "micasa-c79ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691533414440:android:d74aa043c0f2a2b568f51d",
+        "android_client_info": {
+          "package_name": "com.tech.micasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691533414440-rba916lsvtnevk17a0sed64cee1nj9fb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.micasa",
+            "certificate_hash": "be053cf6e79e8a61ba7f5be6681e8978782d7b5e"
+          }
+        },
+        {
+          "client_id": "691533414440-asll7s2qhdni62uali89u2a0u08d2s1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBofFaXy5_uScuEIyGBZp5QRZChxAOXDkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691533414440-asll7s2qhdni62uali89u2a0u08d2s1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

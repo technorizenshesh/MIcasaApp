@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.tech.micasa.ui.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+
+        <action
+            android:id="@+id/action_navigation_home_to_itemAllFragment"
+            app:destination="@id/itemAllFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_searchItemFragment"
+            app:destination="@id/searchItemFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_itemDetailFragment"
+            app:destination="@id/itemDetailFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chatlist"
+        android:name="com.tech.micasa.ui.ChatListFragment"
+        android:label="@string/chat"
+        tools:layout="@layout/fragment_chat_list" >
+        <action
+            android:id="@+id/action_navigation_chatlist_to_one2OneChatFragment"
+            app:destination="@id/one2OneChatFragment" />
+    </fragment>
+
+
+     <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.tech.micasa.ui.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notification" />
+
+
+    <fragment
+        android:id="@+id/itemAllFragment"
+        android:name="com.tech.micasa.ui.ItemAllFragment"
+        android:label="fragment_item_all"
+        tools:layout="@layout/fragment_item_all" >
+
+        <action
+            android:id="@+id/action_itemAllFragment_to_itemDetailFragment"
+            app:destination="@id/itemDetailFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/itemDetailFragment"
+        android:name="com.tech.micasa.ui.ItemDetailFragment"
+        android:label="fragment_item_detail"
+        tools:layout="@layout/fragment_item_detail" >
+        <action
+            android:id="@+id/action_itemDetailFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_itemDetailFragment_to_searchItemFragment"
+            app:destination="@id/searchItemFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.tech.micasa.ui.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_one2OneChatFragment"
+            app:destination="@id/one2OneChatFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_produUserProfileFragment"
+            app:destination="@id/produUserProfileFragment" />
+    </fragment>
+
+
+    <dialog
+        android:id="@+id/bottomSheetFragment"
+        android:name="com.tech.micasa.ui.BottomSheetFragment"
+        android:label="fragment_bottom_sheet"
+        tools:layout="@layout/fragment_bottom_sheet" />
+
+
+    <fragment
+        android:id="@+id/one2OneChatFragment"
+        android:name="com.tech.micasa.ui.One2OneChatFragment"
+        android:label="fragment_one2_one_chat"
+        tools:layout="@layout/fragment_one2_one_chat" />
+
+
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.tech.micasa.ui.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" >
+        <action
+            android:id="@+id/action_myProfileFragment_to_changLangFragment"
+            app:destination="@id/changLangFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_myItemsFragment"
+            app:destination="@id/myItemsFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_termsAndConditionFragment"
+            app:destination="@id/termsAndConditionFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_contactUs"
+            app:destination="@id/contactUs" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.tech.micasa.ui.ItemSellFragment"
+        android:label="fragment_item_sell"
+        tools:layout="@layout/fragment_item_sell" >
+
+
+        <action
+            android:id="@+id/action_navigation_add_to_saleCategoryFragment"
+            app:destination="@id/saleCategoryFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/addSaleItemFragment"
+        android:name="com.tech.micasa.ui.AddSaleItemFragment"
+        android:label="fragment_add_sale_item"
+        tools:layout="@layout/fragment_add_sale_item" />
+
+
+    <fragment
+        android:id="@+id/saleCategoryFragment"
+        android:name="com.tech.micasa.ui.SaleCategoryFragment"
+        android:label="fragment_sale_category"
+        tools:layout="@layout/fragment_sale_category" >
+
+        <action
+            android:id="@+id/action_saleCategoryFragment_to_addSaleItemFragment2"
+            app:destination="@id/addSaleItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changLangFragment"
+        android:name="com.tech.micasa.ui.ChangLangFragment"
+        android:label="fragment_chang_lang"
+        tools:layout="@layout/fragment_chang_lang" />
+    <fragment
+        android:id="@+id/myItemsFragment"
+        android:name="com.tech.micasa.ui.MyItemsFragment"
+        android:label="fragment_my_items"
+        tools:layout="@layout/fragment_my_items" >
+        <action
+            android:id="@+id/action_myItemsFragment_to_updateItemFragment"
+            app:destination="@id/updateItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/produUserProfileFragment"
+        android:name="com.tech.micasa.ui.ProduUserProfileFragment"
+        android:label="fragment_produ_user_profile"
+        tools:layout="@layout/fragment_produ_user_profile" >
+        <action
+            android:id="@+id/action_produUserProfileFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_produUserProfileFragment_to_searchItemFragment"
+            app:destination="@id/searchItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.tech.micasa.ui.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateItemFragment"
+        android:name="com.tech.micasa.ui.UpdateItemFragment"
+        android:label="UpdateItemFragment" />
+    <fragment
+        android:id="@+id/searchItemFragment"
+        android:name="com.tech.micasa.ui.SearchItemFragment"
+        android:label="SearchItemFragment" >
+        <action
+            android:id="@+id/action_searchItemFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.tech.micasa.ui.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment" />
+    <fragment
+        android:id="@+id/termsAndConditionFragment"
+        android:name="com.tech.micasa.ui.TermsAndConditionFragment"
+        android:label="TermsAndConditionFragment" />
+    <fragment
+        android:id="@+id/prodUserListFragment"
+        android:name="com.tech.micasa.ui.ProdUserListFragment"
+        android:label="ProdUserListFragment" >
+        <action
+            android:id="@+id/action_prodUserListFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUs"
+        android:name="com.tech.micasa.ui.ContactUs"
+        android:label="ContactUs" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.tech.micasa.ui.ChangePasswordFragment"
+        android:label="ChangePasswordFragment" />
+
+
+</navigation>

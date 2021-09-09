@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_cardbg"
+    android:elevation="@dimen/_5sdp"
+    android:outlineProvider="background"
+    tools:context=".ui.BottomSheetFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:src="@drawable/felix" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/josefin_sans"
+        android:layout_gravity="center_horizontal"
+        android:text="You are offering"
+        android:textStyle="bold"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/_16sdp" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S$130"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_14sdp"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_makeofferId"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            app:backgroundTint="@color/purple_700"
+            app:rippleColor="@color/white"
+            android:layout_weight="1"
+            app:cornerRadius="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:elevation="@dimen/_3sdp"
+            android:outlineProvider="background"
+            android:fontFamily="@font/josefin_sans"
+            android:textAllCaps="false"
+            android:outlineSpotShadowColor="@color/purple_200"
+            android:text="Make Offer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

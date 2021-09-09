@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    tools:context=".ui.ProdUserListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_searchId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="@color/colorLightGray"
+        android:background="@drawable/rounded_corner_search"
+        android:visibility="visible"
+        android:elevation="@dimen/_10sdp">
+
+        <EditText
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="@dimen/_8sdp"
+            android:editable="false"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/white"
+            android:hint="@string/search"
+            android:drawableLeft="@drawable/ic_search"
+            android:imeOptions="actionSearch"
+            android:paddingStart="@dimen/_15sdp"
+            />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableTint="@color/black"
+        android:drawableRight="@drawable/ic_settings"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/josefin_sans"
+        android:text="@string/filter"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        />
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/josefin_sans"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:text="@string/in_all_category"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />-->
+</LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pro_userList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>
